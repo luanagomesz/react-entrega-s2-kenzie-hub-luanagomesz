@@ -15,6 +15,7 @@ import axios from "axios";
 import RegisterTecnology from "../../Components/RegisterTecnology/Register";
 import RegisterWork from "../../Components/RegisterWork/Register";
 import UpdateWork from "../../Components/RegisterWork/updateWork";
+import defaultImg from "./defaultUser.jpg";
 
 function Profile({ data, history, user, setData }) {
   const [updateTech, setUpdateTech] = useState(false);
@@ -88,7 +89,7 @@ function Profile({ data, history, user, setData }) {
           {data.avatar_url !== null ? (
             <img src={data.avatar_url} />
           ) : (
-            <img src="https://lh3.googleusercontent.com/proxy/Hid2szwfEqcjLrpWMeB0CMdbtelqcq7SwkAY_BgKpIkewaMTfSLJYe6aP97e7xBEb8BpFq21A3UPvlFLHj25QHHkTSo6unFRM5X9bCVeNZ2TCCJ9JA" />
+            <img src={defaultImg} />
           )}
         </header>
         <ContainerPortfolio>
@@ -124,7 +125,7 @@ function Profile({ data, history, user, setData }) {
               {data.avatar_url !== null ? (
                 <img src={data.avatar_url} />
               ) : (
-                <img src="https://lh3.googleusercontent.com/proxy/Hid2szwfEqcjLrpWMeB0CMdbtelqcq7SwkAY_BgKpIkewaMTfSLJYe6aP97e7xBEb8BpFq21A3UPvlFLHj25QHHkTSo6unFRM5X9bCVeNZ2TCCJ9JA" />
+                <img src={defaultImg} />
               )}
               <div>
                 <h4>{data.name}</h4>
