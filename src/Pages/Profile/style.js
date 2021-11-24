@@ -81,6 +81,11 @@ export const ContainerPortfolio = styled.div`
     align-items: center;
     background-color: var(--white);
     height: fit-content;
+    @media (max-width: 950px) {
+      width: 50%;
+      min-width: 320px;
+      margin-bottom: 25px;
+    }
 
     button {
       width: 80%;
