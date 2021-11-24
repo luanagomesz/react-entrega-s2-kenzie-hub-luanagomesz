@@ -41,6 +41,15 @@ export const Content = styled.div`
   background-color: #ffffff;
   padding-top: 40px;
   padding-bottom: 40px;
+  @media (max-width: 520px) {
+    width: 80%;
+    min-width: 320px;
+  }
+  .registred {
+    margin-top: 10px;
+    display: block;
+    color: red;
+  }
   span {
     display: flex;
     justify-content: center;
@@ -48,7 +57,7 @@ export const Content = styled.div`
     font-size: 15px;
     width: 90%;
     p {
-      color: var(--grey-50);
+      color: red;
       display: block;
       font-size: 13px;
       margin: 0px;

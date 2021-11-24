@@ -21,9 +21,15 @@ export const Content = styled.div`
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
+  @media (max-width: 520px) {
+    width: 90%;
+    min-width: 320px;
+  }
   h1 {
     font-size: 28px;
     margin-top: 70px;
+    width: 80%;
+    text-align: center;
   }
   h2 {
     margin-top: 13px;
@@ -35,12 +41,16 @@ export const Content = styled.div`
     font-size: 14px;
     color: var(--grey-100);
     margin-bottom: 56px;
+    width: 90%;
+    text-align: center;
   }
   .pGrey {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 16px;
     color: var(--grey-50);
+    width: 90%;
+    text-align: center;
   }
   button {
     background-color: var(--green);

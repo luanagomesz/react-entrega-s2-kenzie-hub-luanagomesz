@@ -59,6 +59,8 @@ function Cadastro({ history }) {
         setRegistred(true);
       })
       .catch((err) => {
+        setRegistred("cadastrado");
+        console.log(registred);
         console.log(err);
       });
   };
@@ -167,6 +169,11 @@ function Cadastro({ history }) {
               Cadastrar
             </button>
           </form>
+          {registred === "cadastrado" ? (
+            <p className="registred">Email já cadastrado</p>
+          ) : (
+            ""
+          )}
         </Content>
       </Container>
     </>

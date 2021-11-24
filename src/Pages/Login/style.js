@@ -36,6 +36,10 @@ export const Content = styled.div`
   width: 480px;
   height: 426px;
   background-color: #ffffff;
+  @media (max-width: 520px) {
+    width: 90%;
+    min-width: 320px;
+  }
 
   p {
     font-weight: normal;

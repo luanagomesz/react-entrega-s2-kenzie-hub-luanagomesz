@@ -8,11 +8,13 @@ export const Container = styled.div`
   text-align: center;
   height: 100vh;
   width: 100vw;
+
   background-color: var(--grey-0);
 `;
 
 export const Content = styled.div`
   width: 85%;
+  max-width: 1415px;
   header {
     display: flex;
     align-items: center;
@@ -47,6 +49,21 @@ export const Content = styled.div`
       padding-right: 5px;
     }
   }
+  @media (max-width: 950px) {
+    width: 100%;
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      background-color: var(--white);
+      box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      margin-top: 0px;
+      margin-bottom: 28px;
+    }
+  }
 `;
 
 export const ContainerPortfolio = styled.div`
@@ -54,6 +71,7 @@ export const ContainerPortfolio = styled.div`
   justify-content: space-between;
   width: 100%;
   height: fit-content;
+
   .perfil {
     width: 30%;
     max-width: 366px;
@@ -223,6 +241,22 @@ export const ContainerPortfolio = styled.div`
     background-color: var(--green);
     border-radius: 10px;
     border: 2px solid var(--grey-100);
+  }
+  @media (max-width: 950px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tecnologias {
+      width: 50%;
+
+      min-width: 320px;
+      margin-bottom: 25px;
+    }
+    .trabalhos {
+      width: 50%;
+      min-width: 320px;
+      margin-bottom: 25px;
+    }
   }
 `;
 
